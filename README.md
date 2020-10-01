@@ -2,4 +2,4 @@
 
 Instant Chat App Created Using Svelte & Firestore, by Berkin Akkaya
 
-> [Try Here](berkinakkaya.github.io/svelte-chat) (Still Under Development)
+> [Try Here](https://berkinakkaya.github.io/svelte-chat) (Still Under Development)
