@@ -50,6 +50,7 @@
 		border: 1px solid rgba($color: #fff, $alpha: 0.4);
 		box-shadow: 0 0 5px rgba($color: #000, $alpha: 0);
 		color: rgba($color: #fff, $alpha: 0.8);
+		margin-bottom: 50px;
 
 		@media (max-width: 1000px) {
 			font-size: 2.8vw;

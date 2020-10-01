@@ -119,6 +119,11 @@
 		on:keydown={SendMessage} />
 
 	<button id="share" on:click={CopyURL}>Copy Chat URL</button>
+
+	<div class="warning">
+		Your information is NOT safe here, this is a public database. Please
+		don't enter sensitive information!
+	</div>
 </main>
 
 <style lang="scss">
@@ -244,5 +249,11 @@
 		&:hover {
 			background-color: rgba(0, 0, 140, 1) !important;
 		}
+	}
+
+	.warning {
+		margin: 50px 0;
+		text-align: center;
+		opacity: 0.8;
 	}
 </style>
