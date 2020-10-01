@@ -1,30 +1,31 @@
 <script lang="ts">
 	import uid from "uid";
+	import ChatPanel from "./ChatPanel.svelte";
 
-	const route = location.pathname.slice(1);
+	const route = location.href.split("/").slice(-1)[0];
 	const chatURL = `${location.origin}/${uid()}`;
 </script>
 
 <header>
-	<h1>Svelte Chat</h1>
+	<a href="/"><h1>Svelte Chat</h1></a>
 	<p>By Berkin AKKAYA</p>
 </header>
 
 {#if route == ''}
-	<p id="tutorial">Share this URL with people, then visit it:</p>
+	<p id="tutorial">Share this URL with a friend, then visit it:</p>
 	<a id="chatLink" href={chatURL}>{chatURL}</a>
 {:else}
-	<p style="font-size: 2em">
-		<b>Your Chat ID:</b>
-		<span style="text-decoration: underline">{route}</span>
-	</p>
-	<p style="margin-top: 50px">This Page Is Under Development!</p>
+	<ChatPanel id={route} />
 {/if}
 
 <style lang="scss">
 	header {
 		margin: 100px 0;
 
+		a {
+			color: white;
+			text-decoration: none;
+		}
 		p {
 			opacity: 0.5;
 			text-align: center;
