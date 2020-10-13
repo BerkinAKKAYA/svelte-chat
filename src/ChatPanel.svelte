@@ -77,7 +77,7 @@
 	}
 
 	function CopyURL() {
-		navigator.clipboard.writeText(`${location.origin}/${uid()}`);
+		navigator.clipboard.writeText(location.href);
 
 		const button = document.getElementById("share");
 		button.innerHTML = "Copied!";
