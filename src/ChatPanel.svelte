@@ -6,16 +6,7 @@
 	import firebase from "firebase/app";
 	import "firebase/firebase-firestore";
 
-	const config = {
-		apiKey: "AIzaSyDIq-xr_oPNNTkfSCACXelShMxRsrljHss",
-		authDomain: "svelte-chat-berkinakkaya.firebaseapp.com",
-		databaseURL: "https://svelte-chat-berkinakkaya.firebaseio.com",
-		projectId: "svelte-chat-berkinakkaya",
-		storageBucket: "svelte-chat-berkinakkaya.appspot.com",
-		messagingSenderId: "173137532990",
-		appId: "1:173137532990:web:2538e32e74e4c081dd596f",
-		measurementId: "G-G01N1MVE6P"
-	};
+	const config = { ... };
 	firebase.initializeApp(config);
 
 	let clientId = localStorage.getItem("clientId") || false;
